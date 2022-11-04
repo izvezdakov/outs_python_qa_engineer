@@ -12,12 +12,9 @@ def pytest_addoption(parser):
     )
     parser.addoption(
         "--headless", action="store_true", help="browser to open"
-        #action="store_true" - значит если параметр передали то тру
-        #не будет запускать браузер (открывать)
-        #возможно гонять тесты на удаленном драйвере - селениум сервере
     )
     parser.addoption(
-        "--base_url", default="http://192.168.31.89:8081/", help="Service url"
+        "--base_url", default="http://192.168.7.181:8081/", help="Service url"
     )
 
 
@@ -31,9 +28,10 @@ def driver(request):
         chrome_options = webdriver.ChromeOptions()
         if headless:
             chrome_options.headless = True
-        _driver = webdriver.Chrome(executable_path=os.path.join(drivers_folder,'chromedriver.exe'), options=chrome_options)
+        _driver = webdriver.Chrome(executable_path=os.path.join(drivers_folder, 'chromedriver.exe'),
+                                   options=chrome_options)
     elif browser_name == 'edge':
-        _driver = webdriver.Edge(executable_path=os.path.join(drivers_folder,'msedgedriver.exe'))
+        _driver = webdriver.Edge(executable_path=os.path.join(drivers_folder, 'msedgedriver.exe'))
     else:
         raise ValueError(f'Browser {browser_name} is not supported.')
     _driver.base_url = base_url
