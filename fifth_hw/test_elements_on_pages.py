@@ -66,3 +66,114 @@ def test_check_elements_on_product_page(driver):
                        driver=driver,
                        timeout=6,
                        expectation_method=EC.visibility_of_element_located)
+
+
+class AdminLoginPage:
+    INPUT_USERNAME = (By.CSS_SELECTOR, '#input-username')
+    INPUT_PASSWORD = (By.CSS_SELECTOR, '#input-password')
+    HELP_BLOCK = (By.XPATH, "//*[@class='help-block']")
+    LOGIN_BTN = (By.XPATH, "//*[@class='btn btn-primary']")
+    FOOTER = (By.CSS_SELECTOR, "#footer")
+
+
+def test_check_elements_on_admin_login_page(driver):
+    driver.get(driver.base_url + 'admin')
+
+    wait_element_until(by_selector_couple=AdminLoginPage.INPUT_USERNAME,
+                       driver=driver,
+                       timeout=1,
+                       expectation_method=EC.visibility_of_element_located)
+
+    wait_element_until(by_selector_couple=AdminLoginPage.INPUT_PASSWORD,
+                       driver=driver,
+                       timeout=1,
+                       expectation_method=EC.visibility_of_element_located)
+
+    wait_element_until(by_selector_couple=AdminLoginPage.HELP_BLOCK,
+                       driver=driver,
+                       timeout=1,
+                       expectation_method=EC.visibility_of_element_located)
+
+    wait_element_until(by_selector_couple=AdminLoginPage.LOGIN_BTN,
+                       driver=driver,
+                       timeout=1,
+                       expectation_method=EC.visibility_of_element_located)
+
+    wait_element_until(by_selector_couple=AdminLoginPage.FOOTER,
+                       driver=driver,
+                       timeout=1,
+                       expectation_method=EC.visibility_of_element_located)
+
+
+class RegisterPage:
+    FIRSTNAME = (By.CSS_SELECTOR, '#input-firstname')
+    LASTNAME = (By.CSS_SELECTOR, '#input-lastname')
+    EMAIL = (By.CSS_SELECTOR, '#input-email')
+    TELEPHONE = (By.CSS_SELECTOR, '#input-telephone')
+    PASSWORD = (By.CSS_SELECTOR, '#input-password')
+
+
+def test_check_elements_on_register_page(driver):
+    driver.get(driver.base_url + 'index.php?route=account/register')
+
+    wait_element_until(by_selector_couple=RegisterPage.FIRSTNAME,
+                       driver=driver,
+                       timeout=1,
+                       expectation_method=EC.visibility_of_element_located)
+
+    wait_element_until(by_selector_couple=RegisterPage.LASTNAME,
+                       driver=driver,
+                       timeout=1,
+                       expectation_method=EC.visibility_of_element_located)
+
+    wait_element_until(by_selector_couple=RegisterPage.EMAIL,
+                       driver=driver,
+                       timeout=1,
+                       expectation_method=EC.visibility_of_element_located)
+
+    wait_element_until(by_selector_couple=RegisterPage.TELEPHONE,
+                       driver=driver,
+                       timeout=1,
+                       expectation_method=EC.visibility_of_element_located)
+
+    wait_element_until(by_selector_couple=RegisterPage.PASSWORD,
+                       driver=driver,
+                       timeout=1,
+                       expectation_method=EC.visibility_of_element_located)
+
+
+class CatalogPage:
+    SORTBY = (By.XPATH, "//*[@class='input-group-addon']")
+    PRODUCT_CATEGORY = (By.CSS_SELECTOR, '#product-category')
+    COLUMN_LEFT = (By.CSS_SELECTOR, '#column-left')
+    CONTENT = (By.CSS_SELECTOR, '#content')
+    INPUT_GROUP = (By.XPATH, "//*[@class='input-group']")
+
+
+def test_check_elements_on_catalog_page(driver):
+    driver.get(driver.base_url + 'desktops')
+
+    wait_element_until(by_selector_couple=CatalogPage.SORTBY,
+                       driver=driver,
+                       timeout=1,
+                       expectation_method=EC.visibility_of_element_located)
+
+    wait_element_until(by_selector_couple=CatalogPage.PRODUCT_CATEGORY,
+                       driver=driver,
+                       timeout=1,
+                       expectation_method=EC.visibility_of_element_located)
+
+    wait_element_until(by_selector_couple=CatalogPage.CONTENT,
+                       driver=driver,
+                       timeout=1,
+                       expectation_method=EC.visibility_of_element_located)
+
+    wait_element_until(by_selector_couple=CatalogPage.INPUT_GROUP,
+                       driver=driver,
+                       timeout=1,
+                       expectation_method=EC.visibility_of_element_located)
+    
+    wait_element_until(by_selector_couple=CatalogPage.COLUMN_LEFT,
+                       driver=driver,
+                       timeout=1,
+                       expectation_method=EC.visibility_of_element_located)
