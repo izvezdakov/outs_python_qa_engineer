@@ -1,6 +1,3 @@
-# Добавление нового товара в разделе администратора.
-import time
-
 from sixth_hw.new_user_tests_using_po_pattern import test_data
 from sixth_hw.page_objects.AdminLoginPage import AdminLoginPage
 from sixth_hw.page_objects.AdminPage import AdminPage
@@ -8,6 +5,9 @@ from sixth_hw.page_objects.AddProductPage import AddProductPage
 
 
 def test_add_new_product(driver):
+    """
+    # Добавление нового товара в разделе администратора.
+    """
     driver.get(driver.base_url + 'admin')
     admin_login_page = AdminLoginPage(driver)
     admin_login_page.input(element=admin_login_page.form_input_username,

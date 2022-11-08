@@ -34,3 +34,4 @@ class AddProductPage(BasePage):
     @property
     def alert_success(self):
         return self.element(self._ALERT_SUCCESS)
+
