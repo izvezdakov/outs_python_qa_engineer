@@ -1,6 +1,4 @@
-import time
-
-from sixth_hw.page_objects import test_data
+from sixth_hw.helpers import test_data
 from sixth_hw.page_objects.RegisterAccountPage import RegisterAccountPage
 
 

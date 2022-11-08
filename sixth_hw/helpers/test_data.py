@@ -11,6 +11,8 @@ NEW_USER_LASTNAME = 'NEW_USER_LASTNAME'
 NEW_USER_TELEPHONE = '1234'
 NEW_USER_PASSWORD = 'NEW_USER_PASSWORD'
 
+currencies = {'$', '€', '£'}
+
 
 def generate_product_name():
     return PRODUCT_NAME + str(datetime.datetime.now())
