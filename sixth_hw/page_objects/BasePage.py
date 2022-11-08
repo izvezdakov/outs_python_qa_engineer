@@ -14,7 +14,7 @@ class BasePage:
     def click(self, element):
         ActionChains(self.driver).move_to_element(element).pause(0.1).click().perform()
 
-    def _input(self, element, value):
+    def input(self, element, value):
         self.click(element)
         element.clear()
         element.send_keys(value)

@@ -17,39 +17,39 @@ def test_check_elements_on_main_page(driver):
 
 def test_check_elements_on_product_page(driver):
     driver.get(driver.base_url + 'iphone')
-    main_page = ProductPage(driver)
-    assert main_page.thumbnails
-    assert main_page.btn_share
-    assert main_page.btn_add_to_cart
-    assert main_page.btn_add_to_wish
-    assert main_page.description
+    product_page = ProductPage(driver)
+    assert product_page.thumbnails
+    assert product_page.btn_share
+    assert product_page.btn_add_to_cart
+    assert product_page.btn_add_to_wish
+    assert product_page.description
 
 
 def test_check_elements_on_admin_login_page(driver):
     driver.get(driver.base_url + 'admin')
-    main_page = AdminLoginPage(driver)
-    assert main_page.footer
-    assert main_page.form_input_password
-    assert main_page.form_input_username
-    assert main_page.btn_login
-    assert main_page.help_block
+    admin_login_page = AdminLoginPage(driver)
+    assert admin_login_page.footer
+    assert admin_login_page.form_input_password
+    assert admin_login_page.form_input_username
+    assert admin_login_page.btn_login
+    assert admin_login_page.help_block
 
 
 def test_check_elements_on_register_page(driver):
     driver.get(driver.base_url + 'index.php?route=account/register')
-    main_page = RegisterPage(driver)
-    assert main_page.input_firstname
-    assert main_page.input_lastname
-    assert main_page.input_password
-    assert main_page.input_telephone
-    assert main_page.input_email
+    register_page = RegisterPage(driver)
+    assert register_page.input_firstname
+    assert register_page.input_lastname
+    assert register_page.input_password
+    assert register_page.input_telephone
+    assert register_page.input_email
 
 
 def test_check_elements_on_catalog_page(driver):
     driver.get(driver.base_url + 'desktops')
-    main_page = CatalogPage(driver)
-    assert main_page.column_left
-    assert main_page.content
-    assert main_page.password
-    assert main_page.product_category
-    assert main_page.sortby
+    catalog_page = CatalogPage(driver)
+    assert catalog_page.column_left
+    assert catalog_page.content
+    assert catalog_page.password
+    assert catalog_page.product_category
+    assert catalog_page.sortby

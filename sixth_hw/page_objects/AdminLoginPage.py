@@ -12,13 +12,11 @@ class AdminLoginPage(BasePage):
 
     @property
     def form_input_username(self):
-        self.element(self._INPUT_USERNAME)
-        return self
+        return self.element(self._INPUT_USERNAME)
 
     @property
     def form_input_password(self):
-        self.element(self._INPUT_PASSWORD)
-        return self
+        return self.element(self._INPUT_PASSWORD)
 
     @property
     def help_block(self):
@@ -27,8 +25,7 @@ class AdminLoginPage(BasePage):
 
     @property
     def btn_login(self):
-        self.element(self._LOGIN_BTN)
-        return self
+        return self.element(self._LOGIN_BTN)
 
     @property
     def footer(self):
