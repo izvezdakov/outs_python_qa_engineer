@@ -2,7 +2,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
-from sixth_hw.new_user_tests_using_po_pattern import test_data
+from sixth_hw.page_objects import test_data
 from sixth_hw.page_objects.AdminLoginPage import AdminLoginPage
 from sixth_hw.page_objects.AdminPage import AdminPage
 

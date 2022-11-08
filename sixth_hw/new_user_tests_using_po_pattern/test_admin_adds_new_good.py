@@ -1,4 +1,4 @@
-from sixth_hw.new_user_tests_using_po_pattern import test_data
+from sixth_hw.page_objects import test_data
 from sixth_hw.page_objects.AdminLoginPage import AdminLoginPage
 from sixth_hw.page_objects.AdminPage import AdminPage
 from sixth_hw.page_objects.AddProductPage import AddProductPage
