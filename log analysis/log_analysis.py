@@ -17,15 +17,12 @@ class Parser:
 
     def process(self, line: str):
         self.total_number_of_completed_requests += 1
-        self.ip_addresses_counts[re.search(r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}', line).group(0)] += 1
-        for k in self.top_used_methods.keys():
-            if k in re.search('] \"[a-zA-Z]+', line).group(0):
-                self.top_used_methods[k] += 1
-        low_span = re.search(r'\" \d.. ', line).span()[0]
-        query = line[:low_span]
-        high_span = re.search(' \d+$', line).span()[0]
-        duration = int(line[high_span:])
-        self.top_long_requests[query] = duration
+        req_expr = '(?P<ip>\d+.\d+.\d+.\d+).*(?P<date>\[.*]) \\"(?P<method>\w+) (?P<url>.*\\") (?P<duration>.\d*)'
+        parse_string = re.search(req_expr, line)
+        self.ip_addresses_counts[parse_string.groupdict()['ip']] += 1
+        self.top_used_methods[parse_string.groupdict()['method']] += 1
+        uniq_query = line[:re.search(r'\" \d.. ', line).span()[0]]
+        self.top_long_requests[uniq_query] = int(parse_string.groupdict()['duration'])
 
     def calculate_statistic(self):
         max_request = set(sorted(self.ip_addresses_counts.values(), reverse=True)[:3])
