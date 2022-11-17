@@ -10,7 +10,7 @@ class Parser:
     total_number_of_completed_requests = 0
     ip_addresses_counts = collections.defaultdict(int)
     top_three_ips = []
-    top_used_methods = {'GET': 0, 'POST': 0, 'PUT': 0, 'DELETE': 0, 'HEAD': 0, 'CONNECT': 0, 'OPTIONS': 0, 'TRACE': 0}
+    top_used_methods = collections.defaultdict(int)
     top_long_requests = collections.defaultdict(int)
     top_three_long_request = []
     answer = {}
@@ -20,7 +20,11 @@ class Parser:
         req_expr = '(?P<ip>\d+.\d+.\d+.\d+).*(?P<date>\[.*]) \\"(?P<method>\w+) (?P<url>.*\\") (?P<duration>.\d*)'
         parse_string = re.search(req_expr, line)
         self.ip_addresses_counts[parse_string.groupdict()['ip']] += 1
-        self.top_used_methods[parse_string.groupdict()['method']] += 1
+        method = parse_string.groupdict()['method'].upper()
+        if method in self.top_used_methods.keys():
+            self.top_used_methods[method] += 1
+        else:
+            self.top_used_methods.update({method: 0})
         uniq_query = line[:re.search(r'\" \d.. ', line).span()[0]]
         self.top_long_requests[uniq_query] = int(parse_string.groupdict()['duration'])
 
