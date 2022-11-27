@@ -1,0 +1,46 @@
+AdminLoginPage - DEBUG - Find element by locator ('css selector', '#input-username')
+AdminLoginPage - INFO - Input user in <selenium.webdriver.remote.webelement.WebElement (session="e0fa499ce026f20278210909a92cf1b2", element="1735406b-7453-499b-b7eb-94ef57a9bab2")>
+AdminLoginPage - INFO - Clicking element: <selenium.webdriver.remote.webelement.WebElement (session="e0fa499ce026f20278210909a92cf1b2", element="1735406b-7453-499b-b7eb-94ef57a9bab2")>
+AdminLoginPage - DEBUG - Find element by locator ('css selector', '#input-password')
+AdminLoginPage - INFO - Input bitnami in <selenium.webdriver.remote.webelement.WebElement (session="e0fa499ce026f20278210909a92cf1b2", element="14b44a56-6af2-488f-aa17-80dfd46c102f")>
+AdminLoginPage - INFO - Clicking element: <selenium.webdriver.remote.webelement.WebElement (session="e0fa499ce026f20278210909a92cf1b2", element="14b44a56-6af2-488f-aa17-80dfd46c102f")>
+AdminLoginPage - DEBUG - Find element by locator ('xpath', "//*[@class='btn btn-primary']")
+AdminLoginPage - INFO - Clicking element: <selenium.webdriver.remote.webelement.WebElement (session="e0fa499ce026f20278210909a92cf1b2", element="e0b9191d-c60e-45d0-86cf-01921982102b")>
+AdminPage - DEBUG - Find element by locator ('css selector', '#menu-catalog')
+AdminPage - INFO - Clicking element: <selenium.webdriver.remote.webelement.WebElement (session="e0fa499ce026f20278210909a92cf1b2", element="1f452c04-d853-4944-93f5-229879db4632")>
+AdminPage - DEBUG - Find element by locator ('css selector', '#menu-catalog')
+AdminPage - INFO - Clicking element: <selenium.webdriver.remote.webelement.WebElement (session="e0fa499ce026f20278210909a92cf1b2", element="6e7c7b6f-4a0d-434c-8bee-b423387d83cd")>
+AdminPage - DEBUG - Find element by locator ('css selector', "[data-original-title='Add New']")
+AdminPage - INFO - Clicking element: <selenium.webdriver.remote.webelement.WebElement (session="e0fa499ce026f20278210909a92cf1b2", element="173ebb98-c111-48f6-89ab-ade9639755a1")>
+AddProductPage - DEBUG - Find element by locator ('css selector', '#input-name1')
+AddProductPage - INFO - Clicking element: <selenium.webdriver.remote.webelement.WebElement (session="e0fa499ce026f20278210909a92cf1b2", element="627f6c8c-c44d-4909-961d-9fc221365050")>
+AddProductPage - DEBUG - Find element by locator ('css selector', '#input-name1')
+AddProductPage - INFO - Input PRODUCT_NAME2022-11-09 18:12:14.808765 in <selenium.webdriver.remote.webelement.WebElement (session="e0fa499ce026f20278210909a92cf1b2", element="627f6c8c-c44d-4909-961d-9fc221365050")>
+AddProductPage - INFO - Clicking element: <selenium.webdriver.remote.webelement.WebElement (session="e0fa499ce026f20278210909a92cf1b2", element="627f6c8c-c44d-4909-961d-9fc221365050")>
+AddProductPage - DEBUG - Find element by locator ('css selector', '#input-meta-title1')
+AddProductPage - INFO - Input PRODUCT_TAG2022-11-09 18:12:15.282582 in <selenium.webdriver.remote.webelement.WebElement (session="e0fa499ce026f20278210909a92cf1b2", element="f1f61a30-3915-4506-8c75-a4c33dd3e6a2")>
+AddProductPage - INFO - Clicking element: <selenium.webdriver.remote.webelement.WebElement (session="e0fa499ce026f20278210909a92cf1b2", element="f1f61a30-3915-4506-8c75-a4c33dd3e6a2")>
+AddProductPage - DEBUG - Find element by locator ('css selector', '[href$="#tab-data"]')
+AddProductPage - INFO - Clicking element: <selenium.webdriver.remote.webelement.WebElement (session="e0fa499ce026f20278210909a92cf1b2", element="5ef7b58d-7fa6-47f0-8818-a2b1041fff76")>
+AddProductPage - DEBUG - Find element by locator ('css selector', '#input-model')
+AddProductPage - INFO - Input PRODUCT_MODEL2022-11-09 18:12:16.309286 in <selenium.webdriver.remote.webelement.WebElement (session="e0fa499ce026f20278210909a92cf1b2", element="1a6c1d3f-848b-42ea-bbba-f8305c1d07af")>
+AddProductPage - INFO - Clicking element: <selenium.webdriver.remote.webelement.WebElement (session="e0fa499ce026f20278210909a92cf1b2", element="1a6c1d3f-848b-42ea-bbba-f8305c1d07af")>
+AddProductPage - DEBUG - Find element by locator ('css selector', "[data-original-title='Save']")
+AddProductPage - INFO - Clicking element: <selenium.webdriver.remote.webelement.WebElement (session="e0fa499ce026f20278210909a92cf1b2", element="2f0bde54-67dc-40d3-8bda-8c726ab4d043")>
+AddProductPage - DEBUG - Find element by locator ('xpath', "//*[@class='alert alert-success alert-dismissible']")
+AdminLoginPage - DEBUG - Find element by locator ('css selector', '#input-username')
+AdminLoginPage - INFO - Input user in <selenium.webdriver.remote.webelement.WebElement (session="9a52e6206f5292f53cbe7dc092c464a2", element="fbc0f664-c730-4ba7-9b39-d29956f591e4")>
+AdminLoginPage - INFO - Clicking element: <selenium.webdriver.remote.webelement.WebElement (session="9a52e6206f5292f53cbe7dc092c464a2", element="fbc0f664-c730-4ba7-9b39-d29956f591e4")>
+AdminLoginPage - DEBUG - Find element by locator ('css selector', '#input-password')
+AdminLoginPage - INFO - Input bitnami in <selenium.webdriver.remote.webelement.WebElement (session="9a52e6206f5292f53cbe7dc092c464a2", element="2cd64355-e542-440d-a54d-db2b11694b8c")>
+AdminLoginPage - INFO - Clicking element: <selenium.webdriver.remote.webelement.WebElement (session="9a52e6206f5292f53cbe7dc092c464a2", element="2cd64355-e542-440d-a54d-db2b11694b8c")>
+AdminLoginPage - DEBUG - Find element by locator ('xpath', "//*[@class='btn btn-primary']")
+AdminLoginPage - INFO - Clicking element: <selenium.webdriver.remote.webelement.WebElement (session="9a52e6206f5292f53cbe7dc092c464a2", element="f59455f8-74a1-4f70-96ba-fa0aa527b0b3")>
+AdminPage - DEBUG - Find element by locator ('css selector', '#menu-catalog')
+AdminPage - INFO - Clicking element: <selenium.webdriver.remote.webelement.WebElement (session="9a52e6206f5292f53cbe7dc092c464a2", element="7ab8d21d-619a-45f1-84ac-c90fa5c98f6e")>
+AdminPage - DEBUG - Find element by locator ('css selector', '#menu-catalog')
+AdminPage - INFO - Clicking element: <selenium.webdriver.remote.webelement.WebElement (session="9a52e6206f5292f53cbe7dc092c464a2", element="acc42773-72bf-4856-bae0-b3ae2694af73")>
+AdminPage - DEBUG - Find element by locator ('xpath', "//*[@class='table table-bordered table-hover']")
+AdminPage - DEBUG - Find element by locator ('css selector', "[data-original-title='Delete']")
+AdminPage - INFO - Clicking element: <selenium.webdriver.remote.webelement.WebElement (session="9a52e6206f5292f53cbe7dc092c464a2", element="dab2155f-ae3b-4af8-86db-53a8d9ac0265")>
+AdminPage - DEBUG - Find element by locator ('xpath', "//*[@class='alert alert-success alert-dismissible']")

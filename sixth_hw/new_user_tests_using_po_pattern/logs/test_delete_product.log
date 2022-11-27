@@ -1,0 +1,16 @@
+AdminLoginPage - DEBUG - Find element by locator ('css selector', '#input-username')
+AdminLoginPage - INFO - Input user in <selenium.webdriver.remote.webelement.WebElement (session="9a52e6206f5292f53cbe7dc092c464a2", element="fbc0f664-c730-4ba7-9b39-d29956f591e4")>
+AdminLoginPage - INFO - Clicking element: <selenium.webdriver.remote.webelement.WebElement (session="9a52e6206f5292f53cbe7dc092c464a2", element="fbc0f664-c730-4ba7-9b39-d29956f591e4")>
+AdminLoginPage - DEBUG - Find element by locator ('css selector', '#input-password')
+AdminLoginPage - INFO - Input bitnami in <selenium.webdriver.remote.webelement.WebElement (session="9a52e6206f5292f53cbe7dc092c464a2", element="2cd64355-e542-440d-a54d-db2b11694b8c")>
+AdminLoginPage - INFO - Clicking element: <selenium.webdriver.remote.webelement.WebElement (session="9a52e6206f5292f53cbe7dc092c464a2", element="2cd64355-e542-440d-a54d-db2b11694b8c")>
+AdminLoginPage - DEBUG - Find element by locator ('xpath', "//*[@class='btn btn-primary']")
+AdminLoginPage - INFO - Clicking element: <selenium.webdriver.remote.webelement.WebElement (session="9a52e6206f5292f53cbe7dc092c464a2", element="f59455f8-74a1-4f70-96ba-fa0aa527b0b3")>
+AdminPage - DEBUG - Find element by locator ('css selector', '#menu-catalog')
+AdminPage - INFO - Clicking element: <selenium.webdriver.remote.webelement.WebElement (session="9a52e6206f5292f53cbe7dc092c464a2", element="7ab8d21d-619a-45f1-84ac-c90fa5c98f6e")>
+AdminPage - DEBUG - Find element by locator ('css selector', '#menu-catalog')
+AdminPage - INFO - Clicking element: <selenium.webdriver.remote.webelement.WebElement (session="9a52e6206f5292f53cbe7dc092c464a2", element="acc42773-72bf-4856-bae0-b3ae2694af73")>
+AdminPage - DEBUG - Find element by locator ('xpath', "//*[@class='table table-bordered table-hover']")
+AdminPage - DEBUG - Find element by locator ('css selector', "[data-original-title='Delete']")
+AdminPage - INFO - Clicking element: <selenium.webdriver.remote.webelement.WebElement (session="9a52e6206f5292f53cbe7dc092c464a2", element="dab2155f-ae3b-4af8-86db-53a8d9ac0265")>
+AdminPage - DEBUG - Find element by locator ('xpath', "//*[@class='alert alert-success alert-dismissible']")
